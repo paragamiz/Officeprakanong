@@ -76,6 +76,19 @@ nav {
   white-space: nowrap;
 }
 .nav-call:hover { background: var(--ink); transform: translateY(-1px); }
+.nav-right { display: flex; align-items: center; gap: 10px; }
+.nav-ig {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; height: 36px;
+  border-radius: 100px;
+  color: var(--green);
+  border: 1.5px solid var(--green);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.nav-ig svg { width: 18px; height: 18px; }
+.nav-ig:hover { background: var(--green); color: var(--paper); transform: translateY(-1px); }
 
 
 /* ===== HERO IMAGE ===== */
@@ -621,6 +634,23 @@ section { padding: 68px 0; }
   color: rgba(253, 251, 244, 0.7);
   font-weight: 300;
 }
+.cta-ig {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  font-family: 'Sora', 'Noto Color Emoji', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--paper);
+  border: 1.5px solid rgba(253, 251, 244, 0.5);
+  padding: 10px 22px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+.cta-ig svg { width: 18px; height: 18px; }
+.cta-ig:hover { background: rgba(253, 251, 244, 0.14); border-color: var(--paper); transform: translateY(-2px); }
 
 /* ===== FOOTER ===== */
 footer {
@@ -635,6 +665,20 @@ footer {
   margin-bottom: 8px;
 }
 .foot-meta { font-size: 13px; color: #6a7663; font-weight: 300; }
+.foot-ig {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-family: 'Sora', 'Noto Color Emoji', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--green);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.foot-ig svg { width: 16px; height: 16px; }
+.foot-ig:hover { color: var(--ink); }
 
 /* ===== MOBILE STICKY CALL ===== */
 .mobile-call {
@@ -688,7 +732,10 @@ footer {
 <nav>
   <div class="nav-inner">
     <div class="brand"><span class="pin">📍</span> ออฟฟิศให้เช่า · พระโขนง</div>
-    <a href="tel:0837882911" class="nav-call">☎ 083-788-2911</a>
+    <div class="nav-right">
+      <a href="https://www.instagram.com/officeprakanong/" target="_blank" rel="noopener" class="nav-ig" aria-label="Instagram @officeprakanong"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor" stroke="none"/></svg></a>
+      <a href="tel:0837882911" class="nav-call">☎ 083-788-2911</a>
+    </div>
   </div>
 </nav>
 
@@ -884,6 +931,7 @@ footer {
       <h2>สนใจเช่าออฟฟิศ? โทรมาคุยกันได้เลย</h2>
       <p>นัดเข้าชมห้องจริง สอบถามราคาแต่ละแบบ หรือขอรายละเอียดเพิ่มเติม ยินดีให้บริการค่ะ</p>
       <a href="tel:0837882911" class="cta-phone"><span class="ring">☎</span> 083-788-2911</a>
+      <div><a href="https://www.instagram.com/officeprakanong/" target="_blank" rel="noopener" class="cta-ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor" stroke="none"/></svg> ดูรูปเพิ่มเติมที่ IG @officeprakanong</a></div>
       <div class="cta-hours">โทรได้ทุกวัน · ยินดีตอบทุกข้อสงสัย</div>
     </div>
   </div>
@@ -893,6 +941,7 @@ footer {
   <div class="wrap">
     <div class="foot-brand">📍 ออฟฟิศให้เช่า · ติด BTS พระโขนง</div>
     <div class="foot-meta">เริ่มต้น 15,000 บาท/เดือน · มีลิฟท์ · ห้องหลากหลายรูปแบบ · โทร 083-788-2911</div>
+    <a href="https://www.instagram.com/officeprakanong/" target="_blank" rel="noopener" class="foot-ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor" stroke="none"/></svg> @officeprakanong</a>
   </div>
 </footer>
 
